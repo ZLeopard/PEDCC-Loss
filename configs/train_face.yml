@@ -1,0 +1,28 @@
+MODEL:
+  NUM_CLASSES:
+
+SOLVER:
+  BASE_LR: 0.1
+  WEIGHT_DECAY: 0.0001
+  IMS_PER_BATCH: 128
+  LOG_PERIOD: 100
+
+DATASETS:
+  NAME: "CIFAR100"
+
+TEST:
+  IMS_PER_BATCH: 128
+
+METRIC:
+  NAME: "AM-Softmax"
+  S: 15.0
+  M: 0.5
+  IS_PEDCC: True
+
+
+ARCHI:
+  NAME: "VGG"
+
+OUTPUT_DIR: "./checkpoint/cifar100"
+LFW_ROOT: "./data/Datasets/my_data/lfw/lfw-align-128"
+LFW_TEST_LIST: "./data/Datasets/my_data/lfw/lfw_test_pair.txt"
