@@ -21,7 +21,7 @@ Then we get the file named `100_512.pkl`, this is the PEDCC weights
 
 ## Train Net
 ```
-python utils\train_net.py
+python tools\train_net.py
 ```
 
 ## Visualize the PEDCC in 2-D and 3-D
