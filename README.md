@@ -1,5 +1,5 @@
 # PEDCC-Loss 
-The article is available in [arxiv:1904.06008](https://arxiv.org/abs/1904.06008)
+The article is available in [A New Loss Function for CNN Classifier Based on Pre-defined Evenly-Distributed Class Centroids](https://arxiv.org/abs/1904.06008)
 
 # Requirements
 * Python >= 3.6
