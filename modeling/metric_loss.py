@@ -46,7 +46,7 @@ class CosineLinear_PEDCC(nn.Module):
         cos_theta = x.mm(ww)  # size=(B,Classnum)  x.dot(ww)
         cos_theta = cos_theta / xlen.view(-1, 1) / wlen.view(1, -1)  #
         cos_theta = cos_theta.clamp(-1, 1)
-        cos_theta = cos_theta * xlen.view(-1, 1)
+        # cos_theta = cos_theta * xlen.view(-1, 1)
 
         return cos_theta  # size=(B,Classnum,1)
 
