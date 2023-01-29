@@ -42,7 +42,7 @@ def train(cfg, logger):
     train_loader = make_data_loader(cfg, is_train=True)
     val_loader = make_data_loader(cfg, is_train=False)
 
-    loss_fn2 = torch.nn.MSELoss()
+    loss_fn2 = torch.nn.MSELoss(reduction='sum')
 
 
     do_train(
